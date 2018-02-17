@@ -1,0 +1,24 @@
+<ion-view view-title="Edit Beneficiary" style='background: url("img/img2.jpg");background-repeat: no-repeat;background-size: cover;'>
+      <ion-content class="padding">
+        <form class="list" name="myForm">
+          <label class="item item-input">
+            <input type="text" placeholder="Full Name" ng-model="ben.name" name="bname" ng-model-options="{allowInvalid: true}" ng-pattern="/^[a-zA-Z ]*$/">
+          </label>
+          <div ng-show="myForm.bname.$error.pattern" class="assertive">Name should not contain any special characters or numbers.</div>
+          <label class="item item-input">
+            <input type="text" placeholder="Account number" name="acc1" ng-model="ben.accno" ng-model-options="{allowInvalid: true}" ng-pattern="/^[0-9]{6,15}$/" ng-change="check(ben)">
+          </label>
+          <div ng-show="myForm.acc1.$error.pattern" class="assertive">Only numbers allowed (6-15 digits).</div>
+          <label class="item item-input">
+            <input type="text" placeholder="Confirm account number" name="acc2" ng-model="ben.accno2" ng-pattern="/^[0-9]{6,15}$/" ng-change="check(ben)" ng-model-options="{allowInvalid: true}">
+          </label>
+          <div ng-show="myForm.acc2.$error.pattern" class="assertive">Only numbers allowed (6-15 digits).</div>
+          <div ng-show="match" class="assertive">Account numbers mismatch.</div>
+          <label class="item item-input">
+            <input type="text" placeholder="IFSC Code" ng-model="ben.ifsc" name="ifsc" ng-model-options="{allowInvalid: true}" ng-pattern="/^[a-zA-Z0-9]*$/">
+          </label>
+          <div ng-show="myForm.ifsc.$error.pattern" class="assertive">No spaces or special characters allowed in IFSC code.</div>
+          <submit class="button button-positive button-block" ng-click="save(ben,myForm)">Save</submit>
+        </form>
+      </ion-content>
+    </ion-view>

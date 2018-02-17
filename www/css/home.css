@@ -1,0 +1,131 @@
+
+.list.item-dash .title.orange {
+  background-color: #EDEDED;
+}
+
+.list.item-dash .content .icon {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 200%;
+}
+
+
+.list.item-dash .content.orange {
+  background-color: #D1D1D1;
+
+}
+
+
+.list.item-dash .content p {
+  color: black;
+  font-size: 90%;
+}
+.list.item-dash .graph {
+  border: 0;
+  text-align: center;
+ 
+  color: #fff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.75);
+}
+
+.list.item-dash .graph.orange {
+  background-color: #35B1FF;
+}
+
+.list.item-dash .footer {
+  border: 0;
+  background-color: #999;
+}
+
+
+
+
+#borderthis
+{
+  border: 1px solid #ccc;
+}
+
+
+
+
+#homeicon{
+   font-size: 24px;
+    color:#0071BC;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+.butt {
+   
+   margin-left: 1%;
+    
+}
+
+.tilecolor1
+{
+
+border-radius: 5%;
+}
+
+
+.itemht{
+  
+  width: 33%;
+  
+}
+
+.layered-paper {
+   
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+        0 10px 0 -5px #eee, /* The second layer */
+        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+        0 20px 0 -10px #eee, /* The third layer */
+        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+}
+
+
+.layered-paper-bal {
+   
+
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+        0 -10px 0 -5px #ccc, /* The second layer */
+        0 -10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+        0 -20px 0 -10px #ccc, /* The third layer */
+        0 -20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+}
+
+.stitched {
+  
+  
+   background: #fff;  
+   border: 3px dashed #00BEA4;
+   border-radius: 4px;
+   box-shadow: 0 0 0 4px #fff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   font-weight: normal;
+}
+
+.capitalize
+{
+  text-transform: capitalize;
+}
+
+.layered-paper-transaction {
+   
+   margin-bottom: 4%;
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), 
+        0 10px 0 -5px #eee, 
+        0 10px 1px -4px rgba(0,0,0,0.15); 
+}
+
+
+.layered-paper-ben {
+   
+   margin-bottom: 4%;
+    
+}
+svg .nv-line{
+  fill:none !important;
+}

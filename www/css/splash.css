@@ -1,0 +1,80 @@
+
+.snip1296 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: center;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.snip1296 h1,
+.snip1296 h5 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1296 h1 {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 2.8em;
+  line-height: 50px;
+  position: relative;
+  color: #0084b4;
+  text-align: center;
+  margin: 0 0 7px;
+}
+
+.snip1296 h5 {
+  margin: 0 40px;
+  padding: 5px 0;
+  font-weight: 500;
+  border-top: 4px solid #8ec1da;
+  border-bottom: 4px solid #8ec1da;
+  white-space: nowrap;
+}
+
+.snip1296 h5:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  border-width: 20px 30px;
+  border-style: solid;
+  border-color: #c0deed #c0deed transparent #c0deed;
+}
+
+.snip1296 h6 {
+  margin: 0 0 2px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  /*color: #8ec1da*/
+
+}
+
+
+.loginlabel
+{
+  margin-top: 2%;
+  margin-right: 2%;
+  
+ 
+}
+
+.padtop
+{
+  margin-top: 35%;
+}
+
+
+.centralize
+{
+    text-align: center;
+}

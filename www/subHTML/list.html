@@ -1,0 +1,20 @@
+<ion-view view-title="Beneficiary"  style='background: url("img/img2.jpg");background-repeat: no-repeat;background-size: cover;'>  
+      <ion-nav-buttons side="right">
+        <button class="button ion-icon ion-person-add" ng-click="changePage()"></button>
+      </ion-nav-buttons>
+      <ion-content class="padding">
+        <label class="item item-input add-border-radius">
+          <br/><input type="Search" placeholder="Search" ng-model="searchData.searchText" />
+        </label><br>
+        <div class="list">
+
+        <div class="item item-button-right layered-paper-ben" ng-repeat="x in array| orderBy:'name'|filter:searchData.searchText">
+          <div style="word-wrap: break-word;white-space: pre-wrap;">{{x.name}}</div>
+          <div class="buttons">
+          <button class="button button-positive icon ion-edit button-clear" ng-click="edit(x)"></button>
+          <button class="button button-positive icon ion-trash-a button-clear" ng-click="delete(x)"></button>
+          </div>
+        </div>
+        </div>      
+      </ion-content>
+</ion-view>

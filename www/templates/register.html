@@ -1,0 +1,64 @@
+<ion-view>
+  <ion-header-bar class="bar-calm">
+    <h1 class="title">Register</h1>
+
+  </ion-header-bar>
+  <ion-content>
+  
+    <form name="mForm" ng-submit="doRegister(registerData,mForm)" >
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label inforeg">
+          <input type="text" name="aname" ng-pattern="/^[a-zA-Z ]*$/"  placeholder="Account Name" ng-model="registerData.name">
+        </label>
+        <div ng-show="mForm.aname.$error.pattern" class="assertive">Name should not contain any special characters or numbers.</div>
+        <label class="item item-input item-stacked-label inforeg">
+          <input type="text" name="anum" ng-pattern="/^[0-9]{6,15}$/"  placeholder="Account Number" ng-model="registerData.accountNum">
+        </label>
+        <div ng-show="mForm.anum.$error.pattern" class="assertive">Only numbers allowed (6-15 digits).</div>
+        <label class="item item-input item-stacked-label inforeg">
+          <input type="email" placeholder="Email"  ng-model="registerData.email">
+        </label>
+         <label class="item item-input item-stacked-label inforeg">
+          <input type="text" name="phone" ng-pattern="/^[0-9]{10}$/" placeholder="Phone"  ng-model="registerData.phone">
+        </label>
+        <div ng-show="mForm.phone.$error.pattern" class="assertive">Invalid phone number(10 digits only) .</div>
+         <label class="item item-input item-stacked-label inforeg">
+          <input type="text" placeholder="Username" name="uname" ng-pattern="/^\s*\w*\s*$/"  ng-model="registerData.userName">
+        </label>
+         <div ng-show="mForm.uname.$error.pattern" class="assertive">Alphanumeric are only allowed(No spaces allowed).</div>
+         <label class="item item-input item-stacked-label inforeg">
+          <input type="password" name="pass" ng-pattern="/^.{8,}$/" ng-change="check()"  placeholder="Password" ng-model="registerData.password" >
+        </label>
+        <div ng-show="mForm.pass.$error.pattern" class="assertive">Invalid password(Atleast 8 characters) .</div>
+         <label class="item item-input item-stacked-label inforeg">
+          <input type="password" name="pass1" ng-pattern="/^.{8,}$/" ng-change="check()"  placeholder="Confirm Password" ng-model="registerData2.confirmPassword">
+        </label>
+         <div ng-show="mForm.pass1.$error.pattern" class="assertive">Invalid password(Atleast 8 characters)  .</div>
+         <div ng-show="match" class="assertive">Passsword mismatch.</div>
+        <label class="item item-input item-select item-stacked-label inforeg">
+          <div class="input-label">
+          Authenticator
+          </div>
+          <select ng-model="registerData.securityQuestion">
+          <option>What primary school did you attend?</option>
+          <option>What time of the day were you born?</option>
+          <option>What was your favorite sport in high school?</option>
+          <option>What was your childhood nickname?</option>
+          <option>What is your favorite movie?</option> 
+          <option>What was the name of the company where you had your first job?</option>
+          <option>In what town was your first job?</option>
+          </select>
+        </label>
+         <label class="item item-input item-stacked-label inforeg">
+          <input type="text"  placeholder="Answer" ng-model="registerData.answer">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" style="border:none;">Submit</button>
+        </label>
+
+
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>

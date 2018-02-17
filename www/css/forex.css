@@ -1,0 +1,195 @@
+/*For border of contents*/
+*,:after,:before{box-sizing:border-box}
+
+
+/*For the floating contents*/
+.alarm{
+	width:310px;
+	margin:5% auto 0;
+	position:relative;
+	background:#f5feff;
+  box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+/*For top blue border of contents*/
+.alarm .top{
+	height:30px;
+	background:#0096a6;
+}
+
+
+/*For FOREX word*/
+.alarm .slide-date{
+	min-height:120px;
+	position:relative;
+	background:#00bcd4;
+}
+
+/*For Conversion word*/
+.alarm .slide-date .alarm-prev span,
+.alarm .slide-date .alarm-next span{
+	height:2px;
+	width:15px;
+	display:block;
+	background:#f5feff;
+	position:relative;
+}
+
+/*For centralizing word*/
+.alarm .slide-date .date{
+	text-align:center;
+}
+.alarm .slide-date .date .dd{
+	color:#f5feff;
+	font-size:36px;
+	font-weight:50;
+	padding-top:16px;
+	line-height:36px;
+}
+.alarm .slide-date .date .mm-yy{
+	color:#007c8d;
+	font-weight:300;
+	padding-top:10px;
+}
+
+/*For black band*/
+.alarm .day{
+	color:#f5feff;
+	font-size:11px;
+	font-weight:400;
+	line-height:11px;
+	background:#616161;
+	padding:10px 20px;
+	text-transform:uppercase;
+	text-align: center;
+	box-shadow:0 2px 4px -1px rgba(0,0,0,.4) inset;
+}
+
+/*For padding*/
+.alarm .alarm-content{
+	padding:15px;
+	overflow:hidden;
+	position:relative;
+}
+
+
+
+
+.alarm .alarm-content .calendar{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99;
+	padding:15px;
+	position:absolute;
+
+	top:80px;
+	left:45px;
+	right:45px;
+	bottom:80px;
+}
+
+
+
+
+.textid{
+
+		font-weight:400;
+	margin-bottom:5px;
+
+}
+
+
+.mycss{
+background:#FFCD9A;
+
+   
+
+}
+
+
+
+.icons
+{
+
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99;
+	padding:15px;
+	
+	top:80px;
+	left:45px;
+	right:45px;
+	bottom:80px;
+
+}
+
+
+#wgtmsr{
+ height:40px;  
+ width:100px; 
+ font-size:20px;
+ font-weight:400;
+ background-color: white;
+}
+
+#emiwgtmsr{
+ height:40px;  
+ width:150px; 
+ font-size:16px;
+ font-weight:300;
+ background-color: white;
+}
+
+#fundwgtmsr{
+ height:40px;  
+ width:230px; 
+ font-size:16px;
+ font-weight:300;
+ border:none;
+ background-color: white;
+}
+
+
+.fundbutton
+{
+	 color: white;
+  background-color:#6BBEA1;
+}
+
+.info {
+    background-color: #F8F8F8;
+    border-left: 6px solid #2196F3;
+    padding: 4px 12px;
+}
+
+.infofund
+{
+    background-color: #F8F8F8;
+    border: 2px solid #FFBD7C;
+    border-left: 6px solid #FFBD7C;
+    padding: 4px 12px;
+}
+
+.inforeg {
+    background-color: #FCFCFC;
+    border-left: 6px solid #2196F3;
+    padding: 4px 12px;
+}
+
+#searchbar {
+    
+    box-sizing: border-box;
+    
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+   
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+   
+}

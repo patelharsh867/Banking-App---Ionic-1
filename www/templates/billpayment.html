@@ -1,0 +1,129 @@
+<ion-view view-title="Bill Payments">
+      <ion-content>
+     
+<div style="background-image: url('img/bg.png');min-height:100%">
+  <img src="img\strip.png" id="homebg" alt="DEMO">
+    <div class="alarm-wrap decheightHEAD">
+      <div class="alarm" >
+        <div class="top clearfix">
+        </div>
+        <div class="slide-date">
+          <div class="date">
+            <div class="dd">E-Pay</div>
+            <div class="mm-yy">Instant Bill Payments</div>
+          </div>
+        </div>
+        <div class="day">ELECTRONIC BILL PAYMENTS</div>
+        <div class="alarm-content mycss">
+        
+          <div class="calendar-time">
+    <form class="list" name="fundForm" ng-submit="payBill()">       
+<div class="list list-inset decheight">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Type
+      </div>
+      <select ng-model="bill.type" ng-change="showType()">
+          <option selected>Mobile</option>
+          <option >DTH</option>
+          <option>Broadband</option>
+      </select>
+  </label>
+</div>
+<div class="list list-inset decheight" ng-show="type.num">
+  <label class="item item-input">
+    <input type="text" ng-pattern="/^[0-9]{10}$/" placeholder="Account or Phone Number" ng-model="tran.number" name="number" >
+  </label>
+          <div ng-show="fundForm.number.$error.pattern" class="assertive">Invalid Account/Phone number</div>
+
+</div>
+<div class="list list-inset decheight" ng-show="type.mobile">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Operator
+      </div>
+      <select ng-model="mobile.operator">
+          <option selected>Airtel</option>
+          <option >Aircel</option>
+          <option>Tata Docomo</option>
+          <option>Reliance</option>
+          <option>Vodafone</option>
+          <option>Idea</option>
+          <option>Bsnl</option>
+      </select>
+  </label>
+</div>
+<div class="list list-inset decheight" ng-show="type.broadband">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Operator
+      </div>
+      <select ng-model="broadband.operator">
+          <option selected>Airtel</option>
+          <option>Tata Docomo</option>
+          <option>Reliance</option>
+          <option>Bsnl</option>
+      </select>
+  </label>
+</div>
+<div class="list list-inset decheight"  ng-show="type.mobile">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Location
+      </div>
+      <select>
+          <option selected>Andhra</option>
+          <option >Tamil Nadu</option>
+          <option>Gujarath</option>
+          <option>Delhi</option>
+          <option>Rajasthan</option>
+      </select>
+  </label>
+</div>
+<div class="list list-inset decheight"  ng-show="type.broadband">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Location
+      </div>
+      <select>
+          <option selected>Andhra</option>
+          <option >Tamil Nadu</option>
+          <option>Gujarath</option>
+          <option>Delhi</option>
+          <option>Rajasthan</option>
+      </select>
+  </label>
+</div>
+<div class="list list-inset decheight"  ng-show="type.DTH">
+  <label class="item item-input item-select">
+      <div class="input-label">
+          Operator
+      </div>
+      <select ng-model="dth.operator">
+          <option selected>Dish TV</option>
+          <option >Tata Sky</option>
+          <option>Airtel digital TV</option>
+          <option>Videocon d2h</option>
+      </select>
+  </label>
+</div>
+
+<div class="list list-inset decheight" ng-show="type.amount">
+  <label class="item item-input">
+    <input type="text" ng-pattern="/^[0-9]*$/" placeholder="Amount" ng-model="tran.amount" name="amount" >
+  </label>
+          <div ng-show="fundForm.amount.$error.pattern" class="assertive">Invalid Amount</div>
+
+</div> 
+<input type="submit" class="button button-block transbutton"  ng-show="type.recharge" value="Recharge">
+        </form>
+        
+
+</div>
+</div>
+</div>
+</div>
+</div><img src="img\strip.png" id="homebg" alt="DEMO">
+ 
+  </ion-content>
+</ion-view>

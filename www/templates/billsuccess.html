@@ -1,0 +1,57 @@
+<ion-view>
+  <ion-content >
+ 		<div class="bar bar-header bar-calm">
+  			<h1 class="title">Success</h1>
+		</div>
+		<div>
+		<button class="button icon icon-right ion-home">
+   Home
+</button>
+</div>
+<!-- <div class="row ">
+<div class="col  col-offset-40">
+		<div class="item item-avatar" style="margin-left:40%;border:none;height:80px;" >
+      			<img src="img/success.png">
+      			</div>
+      			</div>
+    		</div> -->
+    		<div style="float:center;width:100%;text-align:center;margin-top:20px">
+    
+      			<img src="img/success.png" style=" height:70px;">
+      			
+			</div>
+    		<div>
+    		<h2 style="text-align:center;">Recharge Successful</h2>
+    		<p style=" text-align:center;">Hey User , your payment for Rs {{pay.amount}} is successful</h5>
+    		</div>
+		
+		<div class="list">
+
+    		<a class="item item-thumbnail-left" href="#">
+      			<img src="img/logo/{{pay.operator}}.jpg">
+      			<br>
+      				<p><b>Mobile /Account No.</b></p>
+      				<p>{{pay.number}}</p>
+    		</a>
+    		<a class="item item-avatar" href="#">
+      			<img src="img/rupee.png">
+      				<p><b>Amount</b></p>
+      				<p>{{pay.amount}}</p>
+    		</a>
+    		<a class="item item-avatar" href="#">
+      			<img src="img/padnote.png">
+      				<p><b>Order Id</b></p>
+      				<p>ABC12345678</p>
+    		</a>
+    
+		<div class="card dark" style="color:#696969"  >
+            <div class="card-content white-text" >
+              <span class="card-title"></span>
+              <p>You should get confirmation SMS from operator shortly. If you need any further assistance , please do write us at customercare@idb.com</p>
+            </div>
+		</div>
+		<div class="row">
+         <button  class= "button  transbutton button-small col col-30 col-offset-30 pad1 " ng-click="goHome();">Go Home</button>
+    </div>
+  </ion-content>
+</ion-view>

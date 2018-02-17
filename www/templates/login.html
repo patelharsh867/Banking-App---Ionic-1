@@ -1,0 +1,38 @@
+<ion-modal-view>
+  <ion-content class="blackbg">
+
+    <form ng-submit="doLogin()" class="blackbg">
+      <div class="list list-inset centralize">
+        <div class="snip1296 loginlabel centralize">
+          <h6 class="centralize">Est. 1965</h6>
+          <h1 class="centralize">IDB</h1>
+          <h5 class="centralize">You’re richer than you think</h5>
+        </div>
+
+        <label class="item item-input add-border-radius padtop">
+          <br/><input type="text" placeholder="Username" ng-model="loginData.username" />
+        </label><br/>
+        <label class="item item-input add-border-radius">
+          <input type="password" placeholder="Password" ng-model="loginData.password" />
+        </label><br/>
+        
+        <label>
+         <button class="button button-full button-calm" type="submit" >Login</button>
+        </label>
+      </div>
+    
+    </form>
+     
+        <label>
+           <button ng-click="doRegister()" class="button button-small button-clear button-calm col col-center btnlogin" style="font-size:16px;">Sign up to join us</button>
+        </label>
+        <label style="font-size:16px;">
+            <button  ng-click="goForget()" class="button button-small button-clear button-calm col col-center btnlogin" style="font-size:16px;">Forgot Password?</button> 
+        </label>
+
+      </ion-content>
+
+  <div class="buttons">
+    <button class="button button-clear" ng-click="closeLogin()">Close</button>
+  </div>
+</ion-modal-view>

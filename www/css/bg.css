@@ -1,0 +1,57 @@
+
+.darkmenu {
+  background-color: #3FB0F4 !important;
+  color: #ffffff;
+}
+
+.darkhead {
+  background-color: #8BCFF8 !important;
+  color: #ffffff;
+}
+
+.center
+{
+  text-align: center;
+  font-size: 32px; 
+}
+
+
+.dark {
+  background-color: #175072 !important;
+  color: #ffffff;
+}
+
+
+.myheader
+{
+  background: yellow !important
+}
+
+/*Set the background to transparent for ion-item*/
+.dark .item {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #ccc;
+  color: #F0F1F1;
+}
+
+/*Changes the border for the last item*/
+.dark .item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+/*Ion-item adds item-complex and an inner div, .item-content*/
+/* this needs to be transparent too, but doesnt need borders*/
+.dark .item-complex .item-content, .dark .item-radio .item-content {
+  background-color: transparent;
+}
+
+/*Just makes the type white*/
+.dark h2,
+.dark h3,
+.dark p,
+.dark a {
+  color: white;
+}

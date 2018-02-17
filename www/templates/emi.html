@@ -1,0 +1,87 @@
+<ion-view view-title="We Understand You">
+<ion-content>
+  
+
+
+<form ng-submit="calcEmi();" name="emiForm">
+<div style="background-image: url('img/bg.png');">
+  <img src="img\strip.png" id="homebg" alt="DEMO">
+
+<div class="list list-inset decheight transbox">
+<div class="item item-thumbnail-left">
+      <img src="img\money-bag.png" alt="demo"></img>
+      <h2>Amount you need</h2>
+   <input type="text" ng-pattern="/^[0-9]*$/" name="amount"  placeholder="Principle" ng-model="obj.principle">
+   
+</div>
+<div ng-show="emiForm.amount.$error.pattern" class="assertive">Invalid principle</div>
+</div>
+
+<div class="list list-inset decheight transbox">
+<div class="item item-thumbnail-left">
+      <img src="img\price-tag.png" alt="demo"></img>
+      <h2>Rate you wish</h2>
+   <input type="range" name="rate" min="0" max="100"  ng-model="obj.rate">
+     <input type="text"  placeholder="Rate" ng-model="obj.rate" ng-value="obj.rate">
+</div>
+</div>
+
+<div class="list list-inset decheight transbox">
+<div class="item item-thumbnail-left">
+      <img src="img\time.png" alt="demo"></img>
+       <h2>Time you keep</h2>
+     <input type="text" ng-pattern="/^[0-9]*$/"  placeholder="Duration(in integers)" name="duration" ng-model="obj.duration">
+     <select ng-model="obj.mySelect" ng-change="showSelectValue(mySelect)" class="dropdown" id="emiwgtmsr"> 
+            <option >Years</option>
+            <option>Months</option>
+        </select>
+</div>
+<div ng-show="emiForm.duration.$error.pattern" class="assertive">Invalid Duration</div>
+</div>
+
+
+  
+<div class="row">
+     <input type="submit" class= "button transbutton button-small col col-50 pad1" value="Check EMI">
+     <input type="button" class= "button transbutton button-small col col-50 pad2" value="Clear" ng-click="resetFields();">
+</div><br>
+
+
+</form>
+
+
+<div  class="row transbox" style=" margin-top:-25px">
+<ion-item class="item item-thumbnail-left col col-30 butt">
+  <img src="img\calendar.png" style=" margin-left:30px;margin-top:-9px;">
+</ion-item>
+<ion-item class="item item-thumbnail-left col col-30 butt">
+  <img src="img\year.png" style=" margin-left:30px;margin-top:-9px;">
+</ion-item>      
+
+
+</div>
+
+<div  class="row decheight list" style=" padding:5px; margin-top:-3%;">
+  <div class="item item-divider col col-30 butt labelbelowtiles">Per Month</div>
+  <div class="item item-divider col col-30 butt labelbelowtiles">Total Amount </div>
+</div>
+
+<div  class="row" style=" padding:5px">
+  <div class="item col col-45 labelfarbelowtiles">
+    <input type="number"  placeholder="Monthly Emi" ng-model="obj.emi"  readonly="readonly" class="centertext">
+  </div>
+  <div class="item col col-45 labelfarbelowtiles">
+    <input type="number"  placeholder="Total Yearly Emi" ng-model="obj.emiTotal"  readonly="readonly" class="centertext">
+    </div>
+</div>
+
+
+
+</div>
+
+<img src="img\strip.png" id="homebg" alt="DEMO">
+
+   </ion-content>
+</ion-view>
+
+

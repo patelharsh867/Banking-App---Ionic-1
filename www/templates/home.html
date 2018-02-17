@@ -1,0 +1,96 @@
+ <ion-view view-title="Perfect Banking Partner">
+  <ion-content>
+     <div style="background-image: url('img/bg.png');">
+      <div><img src="img\strip.png" id="homebg" alt="DEMO">
+
+    <div class="list card decheightHEAD layered-paper">
+      <div class="item item-avatar">
+        <img src="img\user.png">
+        <h2 class="capitalize">Welcome, {{username}}</h2>
+        <h3>Account Number: {{homeData.accountnum}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+    <div class="stitched"> 
+          <ion-list class="list item-dash">
+            <ion-item class="title orange"><b>User Details</b></ion-item>
+            <ion-item class="content orange text-right item-avatar"  id="borderthis">
+              <img src="img\id-card.png">
+              <p style="margin-left:25px;text-align:left;">Account holder: {{homeData.accountname}}</p>
+                      
+            </ion-item>
+            <!-- <ion-item class="graph orange"><svg id="fillgauge5" width="75" height="5" </svg></ion-item> -->
+            <ion-item class="title orange" style="border:none"><h3 style="border:none;margin-left:50px;">Email ID: {{homeData.email}}</h3> </ion-item>
+            <ion-item class="title orange" style="border:none"><h3 style="border:none;margin-left:50px;">Contact: {{homeData.phone}}</h3> </ion-item>
+                  
+          </ion-list>
+          </div>
+      </div>
+    </div>
+
+    <div class="list card layered-paper-bal">
+      <div class="item item-avatar">
+        <img src="img\rupee.png">
+        <h3>Balance </h3>
+        <h3>{{homeData.balance}}</h3>
+      </div>
+    </div>
+
+  
+
+
+
+
+
+    
+ 
+  
+<div  class="row decheight" style=" padding:5px">
+
+<ion-item menu-close href="#/userProfile/{{username}}/forex" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\exchange.png">
+</ion-item>
+<ion-item menu-close href="#/userProfile/{{username}}/tabs/{{username}}" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\receipt.png">
+</ion-item>
+<ion-item menu-close href="#/userProfile/{{username}}/fund/{{username}}" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\funding.png">
+</ion-item>
+</div>
+
+
+<div  class="row decheight list" style=" padding:5px">
+ 
+  <div class="item item-divider col col-30 butt labelbelowtiles">Forex</div>
+  <div class="item item-divider col col-30 butt labelbelowtiles">Transaction</div>
+   <div class="item item-divider col col-30 butt labelbelowtiles">Fund Transfer</div>
+</div>
+
+
+
+<div  class="row" style=" padding:5px">
+<ion-item menu-close href="#/userProfile/{{username}}/ben/{{username}}" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\boy.png">
+</ion-item>
+<ion-item menu-close href="#/userProfile/{{username}}/bill/{{username}}" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\credit-card.png">
+</ion-item>
+<ion-item menu-close href="#/userProfile/{{username}}/emi" class="item item-thumbnail-left col col-30 butt">
+  <img src="img\emidemo.png">
+</ion-item>      
+
+
+</div>
+
+<div  class="row decheight list" style=" padding:5px; margin-top:-3%;">
+  <div class="item item-divider col col-30 butt labelbelowtiles">Beneficiary</div>
+  <div class="item item-divider col col-30 butt labelbelowtiles">Bill Payment</div>
+  <div class="item item-divider col col-30 butt labelbelowtiles">EMI</div>
+</div>
+
+
+
+  <img src="img\strip.png" id="homebg" alt="DEMO">
+  </ion-content>
+</ion-view>

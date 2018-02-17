@@ -1,0 +1,127 @@
+ <ion-view view-title="Currency Market">
+  <ion-content >
+  <div style="background-image: url('img/bg.png');">
+  <img src="img\strip.png" id="homebg" alt="DEMO">
+    <div class="alarm-wrap decheightHEAD">
+      <div class="alarm" >
+        <div class="top clearfix">
+        </div>
+        <div class="slide-date">
+          <div class="date">
+            <div class="dd">Forex</div>
+            <div class="mm-yy">Conversion</div>
+          </div>
+        </div>
+        <div class="day">CURRENCY MARKET</div>
+        <div class="alarm-content mycss">
+          <!-- <div class="calendar-wrap"> -->
+         <!-- <div class="calendar">  -->
+          <div class="calendar-time">
+           <div class="row">
+
+            <div class="time-hh col col-50 icons">
+              <div class="textid">Base</div>
+              <select ng-model="forex.base" ng-change="forex.calculate()" id="wgtmsr">
+                          <option>AUD</option>
+                          <option>BGN</option>
+                          <option>BRL</option>
+                          <option>CAD</option>
+                          <option>CHF</option>
+                          <option>CNY</option>
+                          <option>CZK</option>
+                          <option>DKK</option>
+                          <option>EUR</option>
+                          <option>GBP</option>
+                          <option>HKD</option>
+                          <option>HRK</option>
+                          <option>HUF</option>
+                          <option>IDR</option>
+                          <option>ILS</option>
+                          <option>INR</option>
+                          <option>JPY</option>
+                          <option>KRW</option>
+                          <option>MXN</option>
+                          <option>MYR</option>
+                          <option>NOK</option>
+                          <option>NZD</option>
+                          <option>PLN</option>
+                          <option>RON</option>
+                          <option>RUB</option>
+                          <option>SEK</option>
+                          <option>SGD</option>
+                          <option>THB</option>
+                          <option>TRY</option>
+                          <option>USD</option>
+                          <option>ZAR</option>
+              </select>
+          </div>
+          <div class="time-ss col col-50 icons">
+            <div class="textid">Counter</div>
+            <select ng-model="forex.convertTo" ng-change="forex.calculate()" id="wgtmsr">
+                <option>AUD</option>
+                <option>BGN</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CHF</option>
+                <option>CNY</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>EUR</option>
+                <option>GBP</option>
+                <option>HKD</option>
+                <option>HRK</option>
+                <option>HUF</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>JPY</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NOK</option>
+                <option>NZD</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>RUB</option>
+                <option>SEK</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>TRY</option>
+                <option>USD</option>
+                <option>ZAR</option>
+              </select>
+          </div>
+        </div>
+<form name="forexForm">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" ng-pattern="/^[0-9]*$/" placeholder="Amount" name="amount" ng-model="forex.input" ng-change="forex.calculate()">
+      </label>
+      <div ng-show="forexForm.amount.$error.pattern" class="assertive">Invalid Input</div>
+    </div>
+</form>
+<div class="list list-inset">
+  <label class="item item-input">
+    <p  ng-bind="forex.result" style=" height: 30px;width: 100px;"></p>
+  </label>
+</div> <nvd3 options="forex.options" data="forex.data" ></nvd3>
+<!-- </div>
+ --><!-- 
+
+</div> -->
+ 
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div><img src="img\bg.png" id="homebg" alt="DEMO">
+  </ion-content>
+</ion-view>

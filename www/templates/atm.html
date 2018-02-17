@@ -1,0 +1,36 @@
+  <ion-view view-title="ATM">  
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">ATM Locator</h1>
+        <div class="buttons">
+            <button class="button button-icon ion-compose" ng-click="modal.show()">Search</button>
+            <button class="button button-icon ion-ios-arrow-back" ng-click="goHome()">Back</button>
+
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div id="map" style="width:100%;height:100%"></div>
+    </ion-content>
+
+    </ion-view>
+
+    <script id="templates/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title">Find ATM</h1>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">Back</button>
+            </ion-header-bar>
+            <ion-content class="padding">
+
+                <div class="row">
+                    <span class="col input col-75">
+              <input ng-model="rad" ng-change="update(rad*1000)" type="text" placeholder="Enter Distance (Km's)">
+            </span>
+                    <button class=" col col-20 button button-positive" ng-click="createContact(newUser)">Search</button>
+                </div>
+
+                <ul class="list">
+                    <li class="item" ng-repeat="atm in atmarr" ng-click="draw($index)">{{atm.name}}</li>
+                </ul>
+            </ion-content>
+        </ion-modal-view>
+    </script>

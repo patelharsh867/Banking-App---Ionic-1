@@ -1,0 +1,32 @@
+
+
+   <ion-popover-view>
+    <ion-header-bar>
+        <h4 class="title centralize" style="text-align:center">Transaction Details</h4>
+    </ion-header-bar>
+    <ion-content>
+        <div class="row tranrow">
+          <div class="col trancol tranheader">Transaction ID</div>
+          <div class="col trancol tranvalue">{{tran.id}}</div>
+        </div>
+      
+        <div class="row tranrow">
+          <div class="col trancol tranheader">Date</div>
+          <div class="col trancol tranvalue">{{tran.effectiveDate}}</div>
+        </div>
+      
+      <div class="row tranrow">
+          <div class="col trancol tranheader">Amount</div>
+          <div class="col trancol tranvalue">{{tran.amount}}</div>
+        </div>
+      
+      <div class="row tranrow">
+          <div class="col trancol tranheader">Description</div>
+          <div class="col trancol tranvalue" ng-bind-html="tran.description"></div>
+        </div>
+               
+
+    
+      
+    </ion-content>
+</ion-popover-view>

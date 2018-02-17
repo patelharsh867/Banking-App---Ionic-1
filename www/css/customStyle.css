@@ -1,0 +1,70 @@
+
+
+
+#homebg
+{
+	width: 100%;
+
+
+}
+
+
+
+
+
+.decheight
+{
+  margin-top: -4%;
+}
+
+.decheightbal
+{
+  margin-top: -1%;
+}
+
+.decheightHEAD
+{
+  margin-top: -5%;
+}
+
+
+.centralize
+{
+    text-align: center;
+}
+
+.popover {
+  height: auto !important;
+  
+}
+.popover ion-header-bar {
+  position: relative;
+}
+.popover ion-content {
+  top: 0;
+  position: relative;
+}
+
+
+.tranheader {
+  background-color: #D3EDFF;
+}
+.tranvalue {
+  background-color: #EDF7FF;
+}
+
+.trancol {
+  border: solid 1px grey;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+.trancol:last-child {
+  border-right: solid 1px grey;
+}
+
+.tranrow:last-child .trancol {
+  border-bottom: solid 1px grey;
+}
+
+
